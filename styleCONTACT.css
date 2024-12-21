@@ -1,0 +1,237 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 5rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.image-box-contact img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+form {
+  flex: 1;
+}
+
+.input-box-contact {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input-box-contact input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  resize: none;
+}
+
+.input-box-contact input:focus,
+textarea:focus {
+  border-color: #2d0202;
+}
+
+.input-box-contact label {
+  font-size: 0.9rem;
+  color: #636c72;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input[type="submit"] {
+  background-color: #2d0202;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #550404;
+}
+
+/* Icônes Contact */
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info-container img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-info-container p a {
+  font-size: 0.9rem;
+  color: #2d0202;
+  text-decoration: none;
+}
+
+.contact-info-container p a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #2d0202;
+  border-radius: 10px;
+  width: 100%; /* Plein écran */
+  max-width: none; /* Supprime toute restriction */
+  margin: 0 auto;
+}
+
+
+.image-box-contact img {
+  width: 100%; /* Image ajustée pour prendre toute la largeur disponible */
+  max-width: 500px; /* Limitation de la largeur maximale de l'image */
+  height: auto; /* Conserve les proportions */
+}
+
+.content form {
+  width: 50%; /* Largeur ajustée pour mieux équilibrer avec l'image */
+}
+
+.contact-info-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-info-container img {
+  width: 40px; /* Taille réduite des icônes */
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-info-container p a {
+  font-size: 14px; /* Taille réduite du texte des liens */
+  color: #2d0202;
+  text-decoration: none;
+}
+
+.contact-info-container p a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
